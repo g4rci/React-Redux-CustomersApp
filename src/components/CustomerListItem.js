@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CustomersListItem = ({ name, editAction, delAction, urlPath, dni }) => {
+const CustomerListItem = ({ name, editAction, delAction, urlPath, dni }) => {
     return (
         <div>
             <div className="customer-list-item">
@@ -19,7 +19,7 @@ const CustomersListItem = ({ name, editAction, delAction, urlPath, dni }) => {
     );
 };
 
-CustomersListItem.propTypes = {
+CustomerListItem.propTypes = {
     name: PropTypes.string.isRequired,
     editAction: PropTypes.string.isRequired,
     delAction: PropTypes.string.isRequired,
@@ -27,4 +27,4 @@ CustomersListItem.propTypes = {
     dni: PropTypes.number.isRequired,
 };
 
-export default CustomersListItem;
+export default CustomerListItem;
