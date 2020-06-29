@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
-import logo from './logo.svg';
+import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import HomeContainer from './containers/HomeContainer';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Link to='/customers'>Customers</Link><br/>
-          <Link to='/customers/3000000'>Customers 30.000.000</Link>
+        <div>
+          <Route exact path='/' component={HomeContainer} />
+          <Route exact path='/customers' component={HomeContainer} />
         </div>
       </Router>
     );
