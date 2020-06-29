@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
 import AppFrame from '../components/AppFrame';
 import CustomersActions from '../components/CustomersActions';
 import { withRouter } from 'react-router-dom';
@@ -14,7 +13,7 @@ class HomeContainer extends Component {
         return (
             <div>
                 <AppFrame 
-                    header='home'
+                    header='Home'
                     body={
                         <div>
                             Esta es la pantalla inicial
@@ -27,10 +26,6 @@ class HomeContainer extends Component {
             </div>
         )
     }
-}
-
-HomeContainer.propTypes = {
-
 };
 
 export default withRouter(HomeContainer);

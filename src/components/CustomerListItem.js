@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 const CustomerListItem = ({ name, editAction, delAction, urlPath, dni }) => {
     return (
         <div>
-            <div className="customer-list-item">
+            <div className="customers-list-item">
                 <div className="field">
                     <Link to={`${urlPath}${dni}`}>{name}</Link>
                 </div>
